@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@tanstack/react-query": "^5.64.2"   // ← ADD THIS LINE (latest stable as of now)
+    "@tanstack/react-query": "^5.64.2"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
