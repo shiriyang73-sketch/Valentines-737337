@@ -3,65 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valentines – From Yuki</title>
-    <meta name="description" content="A special Valentine's message for Elaiza" />
+    <title>Valentines</title>
+    <meta name="description" content="valentines" />
     <meta name="author" content="yuki" />
-    <style>
-      body {
-        margin: 0;
-        font-family: system-ui, sans-serif;
-        background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #333;
-        overflow: hidden;
-      }
-      .container {
-        max-width: 600px;
-        padding: 3rem 1.5rem;
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 30px;
-        box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3);
-      }
-      h1 {
-        color: #ff1493;
-        font-size: 4rem;
-        margin: 0 0 1rem;
-        font-weight: bold;
-      }
-      p {
-        font-size: 1.5rem;
-        line-height: 1.6;
-        margin: 1rem 0;
-      }
-      .heart {
-        font-size: 6rem;
-        animation: beat 1.8s infinite;
-        margin-bottom: 1rem;
-      }
-      @keyframes beat {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.15); }
-      }
-      .questions {
-        margin-top: 2rem;
-        font-size: 1.8rem;
-        color: #ff69b4;
-      }
-    </style>
+    <meta property="og:title" content="Valentines" />
+    <meta property="og:description" content="Valentines" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="yuki" />
+    <meta name="twitter:card" content="yuki" />
+    <meta name="twitter:site" content="yuki" />
+    <meta name="twitter:image" content="yuk" />
   </head>
   <body>
-    <div class="container">
-      <div class="heart">💕</div>
-      <h1>Elaiza 💖</h1>
-      <p>Happy Valentine's Day, my love</p>
-      <p>Even from far away, you are always in my heart every single day.</p>
-      <p class="questions">Will you be my Valentine? ❤️</p>
-      <p class="questions">Will you marry me someday? 💍</p>
-      <p>Forever yours, Yuki 🌹</p>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
