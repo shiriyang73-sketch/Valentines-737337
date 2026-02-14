@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 10 30% 97%;
+    --foreground: 350 30% 20%;
+    --card: 10 40% 95%;
+    --card-foreground: 350 30% 20%;
+    --popover: 10 30% 97%;
+    --popover-foreground: 350 30% 20%;
+    --primary: 345 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 20 40% 92%;
+    --secondary-foreground: 350 30% 25%;
+    --muted: 15 25% 90%;
+    --muted-foreground: 350 15% 45%;
+    --accent: 340 70% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 20 30% 88%;
+    --input: 20 30% 88%;
+    --ring: 345 60% 50%;
+    --radius: 1rem;
+    --rose-soft: 350 80% 88%;
+    --rose-deep: 345 70% 40%;
+    --cream: 30 50% 96%;
+    --gold: 38 70% 55%;
+    --blush: 0 60% 94%;
+    --font-display: 'Playfair Display', serif;
+    --font-handwriting: 'Dancing Script', cursive;
+    --font-body: 'Lora', serif;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .font-handwriting {
+    font-family: var(--font-handwriting);
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  @keyframes float-heart {
+    0% { transform: translateY(100vh) scale(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.8; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+  }
+  @keyframes gentle-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  @keyframes pulse-glow {
+    0%, 100% { filter: drop-shadow(0 0 8px hsl(345 60% 50% / 0.4)); }
+    50% { filter: drop-shadow(0 0 20px hsl(345 60% 50% / 0.7)); }
+  }
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  @keyframes sway {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+  }
+  .animate-float-heart { animation: float-heart linear forwards; }
+  .animate-gentle-bounce { animation: gentle-bounce 2s ease-in-out infinite; }
+  .animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+  .animate-sway { animation: sway 3s ease-in-out infinite; }
+                        }
+
